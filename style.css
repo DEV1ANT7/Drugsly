@@ -1,0 +1,864 @@
+/* obecné nastavení */
+
+body{
+    min-width: 1200px;
+    background-color: rgb(33, 33, 41);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* index.html */
+
+.menu_bar {
+    height: 100px;
+    background-color: rgb(20, 21, 28);
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.link {
+    font-family: 'Panton', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    top: 35px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.link:hover, .active{
+    border-radius: 12px;
+    border: 0px solid white;
+    background-color: white;
+    color: rgb(33, 33, 41);
+    padding-bottom: 1px;
+}
+
+
+.cart{
+    float: right;
+    padding: 30px;
+    right: 20px;
+}
+
+
+.logo{
+    float: left;
+    position: relative;
+    left: 30px;
+}
+
+.main_page {
+    font-family: 'Panton', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    width: auto;
+}
+
+.main_page_video{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.main_page_video_text{
+    position: relative;
+    left: -50%;
+    top: 50px;
+    font-size: 64px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.main_page_picture{
+    margin-top: -80px;
+}
+
+.new_collection{
+    height: 620px;
+    width: auto;
+    background-color: rgb(20, 21, 28);
+    background-image: url(lights_background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.new_collection_background{
+    background-repeat: repeat-y;
+}
+
+.new_collection_text{
+    font-family: 'Panton', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 60;
+    top: 50%;
+    left: 50%;
+    margin-top: -500px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.new_collection_picture{
+    margin-top: -45px;
+}
+
+
+/* store.html */
+
+.store_first_row{
+    text-align: center;
+    width: auto;
+    height: 340px;
+    display: flex;
+}
+
+.store_second_row{
+    text-align: center;
+    width: auto;
+    height: 340px;
+    display: flex;
+    position: relative;
+    top: 220px;
+}
+
+.item{
+    border-radius: 25px;
+    border: 5px solid white;
+    width: 220px;
+    height: 340px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.item:hover{
+    background-color:rgb(20, 21, 28);
+}
+
+.item_name{
+    font-family: 'Panton', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: -20px;
+}
+
+.item_availability{
+    font-family: 'Panton', sans-serif;
+    font-size: 15px;
+    color: rgb(57, 156, 57);
+    margin-top: -20px;
+}
+
+.item_price_btc{
+    font-family: 'Panton', sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+.item_price_xmr{
+    font-family: 'Panton', sans-serif;
+    font-size: 22px;
+    color: white;
+    margin-top: -15px;
+}
+
+/* items */
+
+
+.item_table{
+    margin: 0 auto;
+    border: 0px;
+    padding-top: 60px;
+}
+
+.item_table_data{
+    text-align: left;
+    align-items: left;
+    border: 0px;
+}
+
+.item_table_text{
+    font-family: 'Panton', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    border: 0px;
+}
+.mdma_green{
+    color: rgb(93, 131, 93);
+}
+
+.mdma_red{
+    color: rgb(196, 66, 66);
+}
+
+.mdma_orange{
+    color: rgb(219, 181, 109);
+}
+
+.item_table_amount{
+    border: 3px solid white;
+    background-color: rgb(33, 33, 41);
+    color: white;
+    border-radius: 30px;
+    font-family: 'Panton', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    max-width: 150px;
+    align-items: left;
+}
+
+
+.item_table_avaibility{
+    font-family: 'Panton', sans-serif;
+    font-size: 25px;
+    color: rgb(94, 177, 94);
+    text-align: left;
+    border: 0px;
+}
+
+.item_table_buy{
+    background-color: green;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 150px;
+    min-height: 50px;
+}
+
+.item_table_mdma_bar{
+    position: relative;
+    bottom: 30px;
+}
+
+.item_table_buy_text{
+    margin: 10px;
+    font-size: 30px;
+    position: relative;
+    top: 8px;
+}
+
+.item_table_name{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 70px;
+    text-align: left;
+    border: 0px;
+}
+
+/* warning.html */
+
+.warning_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.warning_text{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.warning_buttons_div{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.warning_button{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgb(34, 144, 207);
+    height: 50;
+    width: 270;
+    overflow: hidden;
+}
+
+.warning_button_left{
+    float: left;
+}
+
+.warning_button_right{
+    float: right;
+}
+
+.warning_button_link{
+    text-decoration: none;
+}
+
+.warning_button_text{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 6px;
+    text-align: center;
+}
+
+/* faq.html */
+
+.faq_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.faq_question{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.faq_answer{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.hr_faq{
+    height: 1px;
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.faq_refference{
+    color: white;
+}
+
+/* about.html */
+
+.about_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about_text{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 20px;
+}
+
+.about_frame{
+    margin: auto;
+    border-radius: 25px;
+    width: 900px;
+    height: 700px;
+    text-align: center;
+}
+
+.about_refference{
+    color: white;
+}
+
+.about_video{
+    border-radius: 25px;
+    text-align: center;
+}
+
+.about_author{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.about_school{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: -15px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.rest_of_site{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* rest_of_site.html */
+
+.gallery_text{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.graph_text{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 20x;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row > .column {
+    padding: 0 8px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  .column {
+    float: left;
+    width: 25%;
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+  
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.mySlides {
+    display: none;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+img {
+    margin-bottom: -4px;
+}
+  
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table, th, td {
+    border:1px solid rgb(255, 255, 255);
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+th{
+    padding: 10px;
+}
+
+.series_description{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center
+}
+
+td{
+    padding: 10px;
+}
+
+.table_frame{
+    padding: 20px;
+}
+
+.table_rating{
+    margin: 0 auto;
+}
+
+.graph_frame{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* cart.html */
+
+
+.cart_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cart_table{  
+    margin: 0 auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    min-width: 800px;
+    max-height: 100px;
+}
+
+.cart_table_data{
+    border: 0px;
+    vertical-align: bottom;
+    border: 0px;
+}
+
+.cart_table_name{
+    border: 0px;
+    vertical-align: bottom;
+    text-align: left;
+    border: 0px;
+}
+
+.cart_table_price_btc{
+    border: 0px;
+    vertical-align: bottom;
+    text-align: right;
+    border: 0px;
+    position: relative;
+    right: 10px;
+}
+
+.cart_table_price_xmr{
+    border: 0px;
+    vertical-align: top;
+    text-align: right;
+    border: 0px;
+    position: relative;
+    right: 10px;
+}
+
+.cart_table_amount{
+    border: 0px;
+    vertical-align: top;
+    text-align: left;
+    border: 0px;
+}
+
+.amount_input{
+    background-color: rgb(33, 33, 41);
+    border: 3px solid white;
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.cart_summary{  
+    margin: 0 auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    min-width: 800px;
+    max-height: 100px;
+    margin-top: 20px;
+}
+
+.summary{
+    padding: 10px;
+    margin: 10px;
+}
+
+.table_link{
+    margin: 0 auto;
+    min-width: 800px;
+    border: 0px;
+}
+
+.link_next{
+    font-family: 'Panton', sans-serif;;
+    text-align: right;
+    border: 0px;
+}
+.link_back{
+    font-family: 'Panton', sans-serif;
+    text-align: left;
+    border: 0px;
+}
+.link_ref{
+    text-decoration: none;
+    color: white;
+}
+
+/* transport.html */
+
+
+.transport_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.transport_table_name{
+    border: 0px;
+    vertical-align: bottom;
+    text-align: left;
+
+}
+
+.transport_table_time{
+    border: 0px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.transport_table_input{
+    border: 0px;
+}
+
+/* adress.html */
+
+.adress_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.adress_table{
+    min-width: 650px;
+}
+
+.adress_text_long{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 620px;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+}
+.adress_text_short{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 298px;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.adress_warning{
+    font-size: 18px;
+    max-width: 620px;
+    text-align: center;
+}
+
+.adress_table_link{
+    margin: 0 auto;
+    min-width: 650px;
+    border: 0px;
+}
+
+
+/* summary.html */
+
+.summary_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.summary_table{
+    padding: 10px;
+}
+
+.summary_summary{
+    margin: -20px;
+}
+
+.pay_btc_table{
+    background-color: rgb(242, 169, 0);
+    margin: 0 auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    min-width: 800px;
+    max-height: 30px;
+}
+
+.pay_xmr_table{
+    background-color: rgb(255, 102, 0);
+    margin: 0 auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    min-width: 800px;
+    max-height: 30px;
+}
+
+/* pay_xmr.html pay_btc.html */
+
+.pay_title{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.pay_frame{
+    zoom: 82%;
+}
+
+.pay_text_amount{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pay_text_fee{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    bottom: 190px;
+}
+
+.pay_text_adress_frame{
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    margin: auto;
+    border: 3px solid white;
+}
+
+
+.pay_text_adress{
+    font-family: 'Panton', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pay_image{
+    margin: auto;
+    text-align: center;
+}
+
+

@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="http://fonts.cdnfonts.com/css/panton" rel="stylesheet">
+        <title>O seriálu | Drugsly</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    </head>
+    <body>
+
+        <div class="menu_bar">
+
+            <div>
+            <a class="link" href="index.html">DOMŮ</a>
+            <a class="link" href="store.html">OBCHOD</a>
+            <a class="link" href="warning.html">UPOZORNĚNÍ</a>
+            <a class="link" href="faq.html">FAQ</a>
+            <a class="link active" href="about.html">O STRÁNCE</a>
+            <a class="cart" href="cart.html"><img src="cart.png" width="40" alt="Kosik"></a>
+            <a class="logo" href="index.html"><img src="drugs-ly light white.png" width="100" alt="Logo"></a>
+            </div>
+
+        </div>
+
+        <h2 class="gallery_text">O seriálu</h2>
+
+        <p class="series_description">Děj seriálu How to sell drugs online (fast) se odehrává ve fiktivním městě Rinseln v Německu a je vyprávěn z pohledu středoškolského studenta Moritze Zimmermanna. Seriál sleduje Moritze a jeho kamaráda Lennyho Sandera, kteří se snaží oživit Moritzovu lásku k bývalé přítelkyni Lise Novakové, a to prostřednictvím prodeje extáze online. Podnikání, které začíná jako malý obchod, se rychle vymkne kontrole a Moritz s Lennym se učí vyrovnávat s následky rozsáhlého obchodu s drogami. Seriál je inspirován skutečným příběhem, který se odehrál v Lipsku v roce 2015. Maximilian Schmidt, který se stal inspirací pro seriál, byl odsouzen k sedmi letům vězení.</p>
+        <p class="series_description">První série vyšla v roce 2019, seriál má aktuálně 3 série. Hlávní dějová linka byla ve třetí sérii formálně zakončena. Ale konec nazačuje možné pokračování.</p>
+        <h2 class="gallery_text">Hodnocení</h2>
+
+        <div class="table_frame">
+            <table class="table_rating">
+                <tr>
+                  <th>Server</th>
+                  <th>Hodnocení</th>
+                  <th>Počet Hodnocení</th>
+                </tr>
+                <tr>
+                  <td><img class="logo_rating" src="csfd_logo.svg" height="40px"></td>
+                  <td>77%</td>
+                  <td>1 760</td>
+                </tr>
+                <tr>
+                  <td><img class="logo_rating" src="imdb_logo.png" height="40px"></td>
+                  <td>79%</td>
+                  <td>30 000+</td>
+                </tr>
+                <tr>
+                    <td><img class="logo_rating" src="rotten_tomatoes.png" height="40px"></td>
+                    <td>89%</td>
+                    <td>Neznámo</td>
+                  </tr>
+              </table>    
+        </div>
+
+        <h2 class="graph_text">Graf hodnocení všech epizod (ČSFD)</h2>
+
+        <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <canvas id="myChart" class="graph_frame" style="width:100%;max-width:600px;"></canvas>
+        <script class="graph_frame">
+            var xValues = [1.1,1.2,1.3,1.4,1.5,1.6,2.1,2.2,2.3,2.4,2.5,2.6,3.1,3.2,3.3,3.4,3.5,3.6];
+            var yValues = [71,74,80,80,76,85,77,74,76,82,75,86,63,74,82,80,76,79];
+            
+            new Chart("myChart", {
+              type: "line",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  fill: false,
+                  lineTension: 0.3,
+                  backgroundColor: "rgba(0,0,255,1.0)",
+                  borderColor: "rgba(255,255,255, 0.9)",
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                scales: {
+                  yAxes: [{ticks: {min: 60, max:90}}],
+                }
+              }
+            });
+            </script>
+        </div>
+
+        <h2 class="gallery_text">galerie</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="HTSDOF_1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="HTSDOF_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="HTSDOF_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="HTSDOF_4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="HTSDOF_5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="HTSDOF_6.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="HTSDOF_1.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="HTSDOF_2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="HTSDOF_3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="HTSDOF_4.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="HTSDOF_5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="HTSDOF_6.jpg" style="width:100%">
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </body>
+</html>
