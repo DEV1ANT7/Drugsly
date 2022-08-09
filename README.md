@@ -5,7 +5,7 @@
 
 ## **Descrtiption**
 
-This site was created as a final project on highschool. My choosen theme was eshop with drugs. Sote is created only with HTML and CSS without JavaScript. Whole site was created for learning purpouses.
+This site was created as a final project on high school. My choosen theme was eshop with drugs. Site is created only with HTML and CSS without JavaScript. Whole site was created for learning purpouses.
 
 ### Features
 
