@@ -15,3 +15,6 @@ This site was created as a final project on high school. My choosen theme was es
 - FAQ page
 - About page
 - Cart and payment page
+
+![Photo of main page](main_photo.png)
+
